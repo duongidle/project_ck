@@ -1,0 +1,182 @@
+:root {
+    --gray: #333;
+    --button-radius: 0.8rem;
+    --max-width: 1290px;
+    --max-height: 720px;
+    --yellow-text:  rgb(255, 153, 0)!important;
+    --yellow-slow:  rgb(250, 246, 228)!important;
+    --grey-slow: rgb(221, 221, 221);
+}
+
+body {
+    align-items: center;
+    display: flex;
+    height: 98vh;
+}
+
+.form__title {
+    font-weight: 300;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 1.25rem;
+}
+
+.container {
+    border-radius: var(--button-radius);
+    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25), 0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
+    height: var(--max-height);
+    max-width: var(--max-width);
+    overflow: hidden;
+    position: relative;
+    background: url("../img/login.jpg")!important;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+    width: 200%;
+}
+
+.container__form {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.container--signin {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.right-panel-active .container--signin {
+    transform: translateX(100%);
+}
+
+.container--signup {
+    left: 0;
+    opacity: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+.container.right-panel-active .container--signup {
+    opacity: 1;
+    transform: translateX(100%);
+    z-index: 9;
+}
+
+.btn {
+    background-color: var(--yellow-text)!important;
+    border-radius: 8px;
+    border: 1px solid var(--yellow-text);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 0.75em;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding: 0.7rem 3rem;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+.btn:hover {
+    background-color: var(--white);
+    background-image: var(--white);
+    color: var(--yellow-text);
+}
+
+.form>.btn {
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    width: 100%;
+    position: relative;
+}
+
+.check {
+    position: absolute;
+    font-size: 21px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 999;
+    background-color: #fff;
+    padding: 4px;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.form {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3rem;
+    height: 100%;
+    text-align: center;
+}
+
+.input {
+    background-color: #fff;
+    border: none;
+    position: relative;
+    border-bottom: 1px solid #000;
+    padding: 0.9rem 0.9rem;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.notification {
+    position: absolute;
+    top: 47px;
+    font-size: 14px;
+    min-width: max-content;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 0 0 0 8px;
+    right: -10px;
+    padding: 4px 8px;
+}
+
+.bg-danger {
+    background-color: #f2dede !important;
+}
+
+.bg-success {
+    background-color: #dff0d8 !important;
+}
+
+.bg-warning {
+    background-color: #fcf8e3 !important;
+}
+
+@media only screen and (max-width: 63.9375em) {
+    .container {
+        background: #fff;
+    }
+    .container.right-panel-active .container--signup {
+        transform: translateX(0%);
+    }
+    .container--signup {
+        width: 100%;
+    }
+    .container__form.container--signin {
+        width: 100%;
+    }
+}

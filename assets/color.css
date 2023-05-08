@@ -1,0 +1,24 @@
+:root{
+    --black--color: rgb(25,25,27);
+    --red--color: rgb(251,96,93);
+    --grey--color: rgb(228,229,229);
+    --grey2--color: rgb(140, 143, 143);
+}
+.black--color{
+    color: var(--black--color)!important;
+}
+.bg-black--color{
+    background-color: var(--black--color)!important;
+}
+.red--color{
+    color: var(--red--color)!important;
+}
+.bg-red--color{
+    color: var(--red--color)!important;
+}
+.grey--color{
+    color: var(--grey--color)!important;
+}
+.grey2--color{
+    color: var(--grey2--color)!important;
+}

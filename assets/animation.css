@@ -1,0 +1,16 @@
+.tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+  }
+  
+  .tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+/* Hover */
+.cartItem__payment:hover{
+  cursor: pointer;
+  background-color: rgb(248, 248, 248);
+}

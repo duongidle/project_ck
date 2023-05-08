@@ -1,0 +1,83 @@
+@media (max-width: 575px) {
+    /* Header */
+
+    /* HomePage */
+    .img__sectionSlide5_contentItem {
+        font-size: 0.35rem;
+    }
+    .img__asideSlider2 {
+        padding: 0 !important;
+    }
+    /* Shop */
+    .shoppage__render img {
+        /* width: 100%!important; */
+    }
+    .shoppage__render,
+    .shoppage__render .row {
+        padding: 0 !important;
+        margin: 0;
+    }
+    #asideRight__shoppage {
+        display: none;
+    }
+    .navbar-brand {
+        width: 50% !important;
+    }
+    /* Page Blog */
+    .pageBlog {
+        font-size: 65%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1025px) {
+    .img__item img {
+        height: 120px !important;
+    }
+    /* Product items */
+    .img__productItem img {
+        width: 160% !important;
+    }
+    /* Page about Us */
+    .main__aboutUs {
+        width: 120% !important;
+    }
+}
+@media (max-width: 1024px) {
+    /* Home page */
+    .slide1__section {
+        height: auto;
+        width: 50%;
+    }
+    html {
+        font-size: 80%;
+    }
+    #homepage__slide1 {
+        margin-top: 2rem;
+    }
+    .card .card-img-overlay h1 {
+        font-size: 1rem;
+    }
+    .title__sectionSlide5 {
+        padding: 0.3rem !important;
+        font-size: 0.5rem;
+    }
+    #render__data__Shoppage {
+        width: 100% !important;
+    }
+    /* Product items */
+    .name__productItem {
+        margin-top: 2rem;
+    }
+    .img__cartPayment {
+        display: none;
+    }
+}
+@media (min-width: 1024px) {
+    /* Shop */
+    #render__data__Shoppage {
+        width: 80% !important;
+    }
+}
+.img__item img {
+    object-fit: cover;
+}
